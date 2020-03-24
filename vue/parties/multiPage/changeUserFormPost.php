@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require('../Controllers/MainController.php');
+//Fichier à suuprimer
 
 $idUser = $_GET['user'];
 $page = $_GET['page'];
