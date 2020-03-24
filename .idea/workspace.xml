@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="637dbd82-636f-4e00-a68b-970ac42e1e78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/Application.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/Controllers/Afficheur.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/Controllers/Gaming.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/Controllers/MainController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/Controllers/Personnage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/Controllers/Routeur.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/Controllers/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/Models/MainModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/Renderer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/autoload.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/returnDislikeActor.php" afterDir="false" />
@@ -22,57 +11,48 @@
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/dislike.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/gbafMiniatureSmartphone.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/like.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jeuxCombatPHPJS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jeuxCombatPHPJS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer-setup.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.phar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/.idea/controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Controllers/.idea/controller.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Controllers/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Controllers/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Controllers/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controleur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.idea/model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/.idea/model.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Autoloader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Error/ErrorManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Error/ErrorManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Error/ErrorManager.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model/PJ.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Pdo/DBManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/DBManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Pdo/DBManager.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Personnage/Classe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/DeathKnight.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/DeathKnight.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Demonist.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Demonist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Druid.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Druid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Hunt.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Hunt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Mage.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Mage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Monk.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Monk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Paladin.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Paladin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/PersonnageManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/PersonnageManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Player.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Player.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Priest.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Priest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Race.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Race/Race.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Rogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Rogue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/Shaman.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Shaman.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/TraitPet.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Pet/TraitPet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Personnage/War.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/War.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Router.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/User/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/User/UserManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiPage/changeUserFormPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/multiPage/changeUserFormPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiPage/paramUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/multiPage/paramUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partie3/creationPersonnagePreMapp.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie3/creationPersonnagePreMapp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partie3/mapp.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie3/mapp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/connexionFormPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_1_inscription_connexion/connexionFormPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/inscriptionFormPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_1_inscription_connexion/inscriptionFormPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/newPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_1_inscription_connexion/newPassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/newPasswordPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_1_inscription_connexion/newPasswordPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/CreationPlayerPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_2_choix_personnage/CreationPlayerPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/deletePlayerPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_2_choix_personnage/deletePlayerPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/mesPersos.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_2_choix_personnage/mesPersos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Http.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/.idea/multiPage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/changeUserFormPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/footerGeneral.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/headerAccueil&amp;Acteur.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/paramUser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie3/creationPersonnagePreMapp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie3/deco.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie3/mapp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/.idea/partie_1_inscription_connexion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/connexionFormPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/formPageConnexion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/inscriptionFormPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/newPassword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/newPasswordPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/pageInscriptionConnexion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/CreationPlayerPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/choix_personnage_test1form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/deletePlayerPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/mesPersos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/mesPersos.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/mesPersos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascript/mapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascript/mapp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascript/mesPersos.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascript/mesPersos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routeur/routeur.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/layout.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/vue/layout.html.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/workspace.xml" afterDir="false" />
@@ -217,6 +197,7 @@
       <workItem from="1584019618694" duration="4324000" />
       <workItem from="1584028692410" duration="478000" />
       <workItem from="1585031987001" duration="9784000" />
+      <workItem from="1585074045071" duration="231000" />
     </task>
     <task id="LOCAL-00001" summary="Add function for emptyCommennt and if the user miss the name">
       <created>1583738246976</created>
@@ -225,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583738246976</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="few correction">
+      <created>1585074198590</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585074198590</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +222,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add function for emptyCommennt and if the user miss the name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add function for emptyCommennt and if the user miss the name" />
+    <MESSAGE value="few correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="few correction" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="109" key="#Inspections" timestamp="1583831301845">
@@ -266,9 +255,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="530" y="198" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583849830060" />
-    <state x="425" y="45" key="CommitChangelistDialog2" timestamp="1583738240003">
+    <state x="425" y="45" key="CommitChangelistDialog2" timestamp="1585074189682">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state x="425" y="45" key="CommitChangelistDialog2/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1585074189682" />
     <state x="425" y="45" key="CommitChangelistDialog2/0.0.1600.900@0.0.1600.900" timestamp="1583738240003" />
     <state x="580" y="206" key="FileChooserDialogImpl" timestamp="1584029174704">
       <screen x="0" y="0" width="1600" height="900" />

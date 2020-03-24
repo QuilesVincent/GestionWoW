@@ -3,7 +3,7 @@ window.onload = function () {
 
     function getHttpRequest () {
         let xhr = new XMLHttpRequest();
-        xhr.open("GET", "http://localhost/xampp/code/jeuxCombatPHPJS/partie3/mapp.php");
+        xhr.open("GET", "http://localhost/code/GestionWorldOfWarcraft/vue/parties/mapp/mapp.html.php");
         xhr.send();
         xhr.onload = function(){
             //Si le statut HTTP n'est pas 200...
@@ -14,33 +14,13 @@ window.onload = function () {
             }else{
                 //Tout fonctionne très bien
                 //alert(xhr.response.length + " octets  téléchargés\n" + JSON.stringify(xhr.response));
-                //console.log(xhr.responseText);
-                //console.log(xhr.responseURL);
-                //console.log(xhr.getAllResponseHeaders());
+                console.log(xhr.responseText);
+                console.log(xhr.responseURL);
+                console.log(xhr.getAllResponseHeaders());
             }
         };
     }
-    /* façon grafikart
-    function getHttpRequest () {
-        let httpRequest1;
-
-        if(window.XMLHttpRequest) {
-            httpRequest1 = new XMLHttpRequest();
-            if(httpRequest1.overrideMimeType){
-                httpRequest1.overrideMimeType('json');
-            }
-        } else if (window.ActiveXObject) {
-            httpRequest1 = new ActiveXObject("Msxml2.XMLHTTP");
-        }
-        httpRequest1.open("GET", "http://localhost/xampp/code/jeuxCombatPHPJS/partie3/mapp.php", true);
-        httpRequest1.send();
-        httpRequest1.addEventListener("onload", (e) => {
-            if(httpRequest1.readyState ===  XMLHttpRequest.DONE &&  httpRequest1.status === 200){
-                console.log(httpRequest1.response);
-            }
-        });
-    }*/
-    getHttpRequest();
+    //getHttpRequest();
 
     const PERSONNAGE = document.querySelector(".ContentPersonnage");
     let topPersonnage = getComputedStyle(PERSONNAGE).getPropertyValue("top");
@@ -119,19 +99,3 @@ window.onload = function () {
     });
 
 };
-/* Cette fonction ne marche pas
-ça modifie de 10 la première fois, puis ensuite, plus aucune modification
-function deplacer(parseIntVariable,signe,cssAffect){
-    let parseResult = parseInt(parseIntVariable);
-    if(signe === "+"){
-        parseIntVariable = parseResult + 10;
-    }else{
-        parseIntVariable = parseResult - 10;
-    }
-    parseIntVariable += "px";
-    if(cssAffect === "left"){
-        PERSONNAGE.style.left = parseIntVariable;
-    }else{
-        PERSONNAGE.style.top = parseIntVariable;
-    }
-}*/

@@ -1,16 +1,5 @@
-<?php
-
-require '../vendor/autoload.php';
-
-?>
-
-<!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <title>Inscription/connexion</title>
-            <meta charset='utf-8'>
-            <link href='../public/css/connexionInscription.css' rel='stylesheet'>
-            <link href="../public/css/footerGeneral.css" rel="stylesheet">
+            <link href='public/css/connexionInscription.css' rel='stylesheet'>
+            <link href="public/css/footerGeneral.css" rel="stylesheet">
             <!--Ajouter des polices google pour rendre le tout plus jolie-->
             
         </head>
@@ -41,7 +30,7 @@ require '../vendor/autoload.php';
                         <h2>Inscription</h2>
                         <p>Le monde de la finance s'ouvre bientôt à vous</p>
                     </div>
-                    <form action='inscriptionFormPost.php' method='post' class='inscriptionFormContent'>
+                    <form action='index.php?controllers=routeur&task=chargerOne' method='post' class='inscriptionFormContent'>
                         <?= empty($_GET['mdic']) ? false : writteAlert($errorObj->missDonnee(), 'p');?>
                         <div class='firstLastNameContent'>
                             <input type='text' name='firstNameInscription' placeholder="Prénom">
@@ -59,6 +48,5 @@ require '../vendor/autoload.php';
                     </form>
                 </div>
             </section>
-        <?php include('../multiPage/footerGeneral.php');?>
+        <?php include('vue/parties/multiPage/footerGeneral.php');?>
         </body>
-    </html>

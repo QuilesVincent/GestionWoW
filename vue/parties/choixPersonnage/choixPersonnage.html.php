@@ -1,5 +1,16 @@
 <?php
+
 session_start();
+
+if(isset($infoUser)){
+    foreach($infoUser as $info){
+        $_SESSION['userName'] = $info['userName'];
+        $_SESSION['idUser'] = $info['id_user'];
+        $_SESSION['lastName'] = $info['lastName'];
+        $_SESSION['firstName'] = $info['firstName'];
+    }
+    $id = $_SESSION['idUser'];
+}
 
 ?>
 
@@ -8,8 +19,8 @@ session_start();
 <head>
     <title>CHoix personnag</title>
     <meta charset="utf-8">
-    <link href="../public/css/choix_personnage-test1form.css" rel="stylesheet">
-    <script src="../public/javascript/choix_personnage_test1form.js"></script>
+    <link href="public/css/choix_personnage-test1form.css" rel="stylesheet">
+    <script src="public/javascript/choix_personnage_test1form.js"></script>
 
 </head>
 
@@ -17,7 +28,7 @@ session_start();
 
 <section class="mainPage allEcran"> <!-- Changer tout le div section une fois le choix fais, remplacer par les 4 races possibles
                             Ensuite, faire la même chose une fois la race choisi, faire apparaitre les 4 classes possibles-->
-    <form action='CreationPlayerPost.php' method='post' id="formInfoPlayerPersonnage">
+    <form action='index.php?controllers=routeur&task=creationPlayer&user=<?= $_SESSION['idUser'];?>' method='post' id="formInfoPlayerPersonnage">
     <div class="divSection divSectionPrincipal">
         <div class="divChoiceRaceSex">
             <div class="divChoiceSex">
@@ -101,7 +112,7 @@ session_start();
                 </div>
                 <div class="divButtonReturn divSpecificRubrique">
                     <div class="contentLien">
-                        <a href="../partie_1_inscription_connexion/pageInscriptionConnexion.php">Retour</a>
+                        <a href="index.php?controllers=user&task=logOut">Retour</a>
                     </div>
                 </div>
                 <div id="divButtonValidGeneral divSpecificRubrique">

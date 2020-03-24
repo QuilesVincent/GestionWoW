@@ -1,6 +1,5 @@
 body{
     background-color: silver;
-    height: 100%;
     border: 1px solid black;
 }
 .mainPage{
@@ -9,7 +8,7 @@ body{
     height: 100%;
 }
 .centralFree{
-    height: 85%;
+    height: 95%;
 }
 .divRubrique{
     display: flex;

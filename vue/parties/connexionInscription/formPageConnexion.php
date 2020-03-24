@@ -2,7 +2,7 @@
 //Affichage d'un type de formulaire en fonction de mauvais mdp (ou username) renseigné
 if(empty($_GET['errConnexion']))
                     {?>
-                    <form action='connexionFormPost.php' method='post' class='connexionForm'>
+                    <form action='index.php?controllers=routeur&task=chargerOne' method='post' class='connexionForm'>
                         <div class='mailConnexionContent'> <!-- variable class à changer par userName au lie de mail-->
                             <label for='userNameConnexion'>UserName</label>
                             <input type='text' name='userNameConnexion' id='inputUserNameConnexion'>
@@ -20,7 +20,7 @@ if(empty($_GET['errConnexion']))
                     }
                     else
                     {?>
-                    <form action='connexionFormPost.php' method='post' class='connexionForm'>
+                    <form action='index.php?controllers=routeur&task=chargerOne' method='post' class='connexionForm'>
                         <div class='mailConnexionContent'> <!-- variable class à changer par userName au lie de mail-->
                             <label for='userNameConnexion'>UserName</label>
                             <input type='text' name='userNameConnexion' id='inputUserNameConnexion' placeholder='mauvais mdp'>

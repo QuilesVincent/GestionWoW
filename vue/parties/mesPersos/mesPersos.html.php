@@ -1,33 +1,23 @@
 <?php
 
-require_once '../controller/controleur.php';
 session_start();
-
-$id_target_user = $_SESSION['id'];
-$req = $personnageManagerObj->getPersonnageByUserTarget($id_target_user);
 $tableau = [];
-while($resp = $req->fetch()){
-    //echo $resp['name_personnage'];
-    array_push($tableau, $resp);
-};
-$pap = "heho";
-if(isset($_POST["data"])){
-    $pap = $_POST["data"];
+foreach($personnages as $perso) {
+    array_push($tableau, $perso);
 }
-$req->closeCursor();
 
+if(isset($infoUser)){
+        $_SESSION['userName'] = $infoUser['userName'];
+        $_SESSION['idUser'] = $infoUser['id_user'];
+        $_SESSION['lastName'] = $infoUser['lastName'];
+        $_SESSION['firstName'] = $infoUser['firstName'];
+        $id = $_SESSION['idUser'];
+}
 
 ?>
-<!Doctype>
-        <html lang="fr">
-            <head>
-                <title>CHoix personnag</title>
-                <meta charset="utf-8">
-                <link href="../public/css/mesPersos.css" rel="stylesheet">
-                <link href="../public/javascript/mesPersos.js" type="text/javascript"/>
-                <script>let data = <?php echo json_encode($tableau);?></script>
-                <script>let data2 = <?php echo json_encode($pap);?></script>
-                <script src="../public/javascript/mesPersos.js"></script>
+<link href="public/css/mesPersos.css" rel="stylesheet">
+<script>let data = <?php echo json_encode($tableau);?></script>
+<script src="public/javascript/mesPersos.js"></script>
 
             </head>
 
@@ -48,14 +38,14 @@ $req->closeCursor();
                         </div>
                         <div class="divContentDeleteCreatePersonnage">
                             <div class="deletePersonnage">
-                                <button id="buttonDeletePersonnage">Delete Personnage</button> <!--Faire un post javascript -->
+                                <button id="buttonDeletePersonnage">Delete Personnage</button>
                             </div>
-                            <div class="createPersonnage"> <!--mettre un lien en click javascript vers la page de création de perso -->
+                            <div class="createPersonnage"> 
                                 <button id="buttonCreatePersonnage">New Personnage</button>
                             </div>
                         </div>
                         <div class="divContentBack">
-                            <div class="back"><!--mettre un lien en click javascript vers la page de connexion -->
+                            <div class="back">
                                 <button id="buttonBack">Back</button>
                             </div>
                         </div>
@@ -69,5 +59,5 @@ $req->closeCursor();
                     </div>
                 </aside>
             </body>
-    </html>
 
+</html>

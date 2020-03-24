@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require('../controller/controleur.php');
+require('../Controllers/MainController.php');
 
 $idUser = $_GET['user'];
 $page = $_GET['page'];

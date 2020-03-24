@@ -1,62 +1,5 @@
 window.onload =  () => {
     var name;
-    function getHttpRequest () {
-        let httpRequest1;
-
-        if(window.XMLHttpRequest) {
-            httpRequest1 = new XMLHttpRequest();
-            if(httpRequest1.overrideMimeType){
-                httpRequest1.overrideMimeType('json');
-            }
-        } else if (window.ActiveXObject) {
-            httpRequest1 = new ActiveXObject("Msxml2.XMLHTTP");
-        }
-        httpRequest1.open("GET", "http://localhost/xampp/code/jeuxCombatPHPJS/partie3/creationPersonnagePreMapp.php", true);
-        httpRequest1.send();
-        httpRequest1.addEventListener("onload", (e) => {
-            if(httpRequest1.readyState ===  XMLHttpRequest.DONE &&  httpRequest1.status === 200){
-                console.log(httpRequest1.responseText);
-            }
-        });
-    }
-
-    function postHTTPRequest (data) {
-        let httpRequest;
-
-        if(window.XMLHttpRequest) {
-            httpRequest = new XMLHttpRequest();
-            if(httpRequest.overrideMimeType){
-                httpRequest.overrideMimeType('json');
-            }
-        } else if (window.ActiveXObject) {
-            httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
-        }
-        data = "data="+data;
-        //httpRequest.open("POST", "http://localhost/xampp/code/jeuxCombatPHPJS/partie3/creationPersonnagePreMapp.php", true);
-        httpRequest.open("POST", "http://localhost/xampp/code/jeuxCombatPHPJS/partie_2_choix_personnage/mesPersos.php", true);
-        httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpRequest.send(data);
-        httpRequest.addEventListener("onload", (e) => {
-            if(httpRequest.readyState ===  XMLHttpRequest.DONE &&  httpRequest.status === 200){
-                console.log(name);
-            }
-        });
-    }
-
-    function postAjax(url, data) {
-        var params = typeof data == 'string' ? data : Object.keys(data).map(
-            function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
-        ).join('&');
-
-        var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
-        xhr.open('POST', url);
-        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.send(params);
-        return xhr;
-    }
-
-
 
     let sideBar = document.getElementById("spacePersonnage");
     let fewPersonnage = data;
@@ -96,22 +39,18 @@ window.onload =  () => {
             name = divPersonnage[i].firstElementChild.textContent;
             console.log(name);
         });
-    }
-    function ajaxhttp(){
-        let requetAjax = new XMLHttpRequest();
-        requetAjax.open("POST", "http://localhost/xampp/code/jeuxCombatPHPJS/partie3/creationPersonnagePreMapp.php");
-        requetAjax.send(name);
-    }
+    };
+
     //Toutes les redirection suite au clic sont contenu ici
     let backPageConnexion = document.getElementById("buttonBack");
     let newPersonnageCreate = document.getElementById("buttonCreatePersonnage");
     let deletePersonnage = document.getElementById("buttonDeletePersonnage");
     let startButton = document.getElementById("buttonStart");
     backPageConnexion.addEventListener("click", (e) => {
-        document.location.href = "http://localhost/code/jeuxCombatPHPJS/partie_1_inscription_connexion/pageInscriptionConnexion.php";
+        document.location.href = "http://localhost/code/GestionWorldOfWarcraft/index.php?controllers=user&task=logOut";
     });
     newPersonnageCreate.addEventListener("click", (e) => {
-        document.location.href = "http://localhost/code/jeuxCombatPHPJS/partie_2_choix_personnage/choix_personnage_test1form.php";
+        document.location.href = "http://localhost/code/GestionWorldOfWarcraft/index.php?controllers=afficheur&task=afficheCreationPersonnage";
     });
 
     //notre ajax:
@@ -180,17 +119,18 @@ window.onload =  () => {
             }
         }
     }
+/* Resoudre le problème du delete
     deletePersonnage.addEventListener("click", (e) => {
         let data = {delete:name};
-        ajax.post("http://localhost/code/jeuxCombatPHPJS/partie_2_choix_personnage/deletePlayerPost.php", data, successDelete, "error");
-    });
+        ajax.post("http://localhost/code/GestionWorldOfWarcraft/vue/parties/mapp/receptJS.php", data, successDelete, "error");
+    });*/
+
     startButton.addEventListener("click", (e) => {
-        let namo = "hackerBaby";
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost/xampp/code/jeuxCombatPHPJS/partie3/creationPersonnagePreMapp.php", true);
+        xhr.open("POST", "http://localhost/code/GestionWorldOfWarcraft/vue/parties/mapp/receptJS.php", true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send('param1=' + name);
-        document.location.href = "http://localhost/xampp/code/jeuxCombatPHPJS/partie3/mapp.php";
+        document.location.href = `http://localhost/code/GestionWorldOfWarcraft/index.php?controllers=routeur&task=goMapp&name_personnage=${name}`;
     });
 
 
