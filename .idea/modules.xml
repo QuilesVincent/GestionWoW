@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/ProjetPHPOPC.iml" filepath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/ProjetPHPOPC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jeuxCombatPHPJS.iml" filepath="$PROJECT_DIR$/.idea/jeuxCombatPHPJS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../routeurGrafikart/.idea/routeurGrafikart.iml" filepath="$PROJECT_DIR$/../routeurGrafikart/.idea/routeurGrafikart.iml" />
+    </modules>
+  </component>
+</project>

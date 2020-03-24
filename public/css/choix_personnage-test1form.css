@@ -1,0 +1,338 @@
+body{
+    margin: auto;
+}
+
+header{
+    background: url("../logo/imgPageChoixPerso.jpg") no-repeat; /*Modifier la photo directement pour qu'elle soit bien proportionné*/
+    background-size: 100% 100%;
+    height: 20%;
+    margin: 0;
+}
+.mainPage{ /*Ecran complet sans le header*/
+    width : 100%;
+
+}
+
+.divSectionPrincipal{ /*Tout l'écran principal sauf side bar*/
+    width: 88%;
+    height: 98%;
+    display: flex;
+}
+
+/* rendu css pour aider à l'execution de js, sera donc supprimer à la fin tout ce qui se trouve entre cette ligne et la même ligne plus bas
+Ce code ne sera evidemment pas supprimé si utile, sinon on supprime*/
+.divRace{ /*Code à modifier car utile*/
+    width: 60px;
+    height: 60px;
+    margin: 7px 0px 7px 0px;
+}
+.divClasse{ /*Code à modifier car utile*/
+    width: 55px;
+    height: 55px;
+    margin: 5px 0px 5px 0px;
+}
+.divInputSex{ /*Code à modifier car utile*/
+    width: 60px;
+    height: 60px;
+}
+
+/* rendu css pour aider à l'execution de js, sera donc supprimer à la fin tout ce qui se trouve entre cette ligne et la même ligne plus haut*/
+
+.divChoiceRaceSex{ /*div including divChoiceSex && divChoiceRace*/
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.divChoiceSex{ /*div including #formSex*/
+    height: 100%;
+}
+.divChoiceSex{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.divInputSex{
+    border: 1px solid black;
+}
+.divChoiceRace{ /*div including divChoicePerCamp*/
+    width: 100%;
+}
+.divRacePerCamp{ /*div including raceAlliance && raceHorde*/
+    display : flex;
+    justify-content: space-around;
+    width : 100%;
+}
+.raceGeneral{ /*div including #formRaceGeneral*/
+    width: 100%;
+}
+#formRaceGeneral{ /*form including : .pandaren*/
+    width: 100%;
+}
+.pandaren{
+    margin: auto;
+}
+.divCentralSectionPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width : 85%;
+
+}
+.divTitlePage{ /*Central of divSectionPrincipal including h1*/
+    margin-left: 37%;
+    width: 23%;
+    height: 50%;
+}
+.divInfoClasse{
+    display: flex;
+    justify-content: flex-end;
+    height: 35%;
+    width: 100%;
+}
+.sousDivContentInfoClass{
+    height: 100%;
+    width: 25%;
+    margin-right: 2%;
+}
+.divRubrique{
+    display: flex;
+    justify-content: space-evenly;
+}
+.divSpecificRubrique, .submitGeneral, .contentButtonInfo, .contentLien{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.submitGeneral,.contentButtonInfo,.contentLien, .textRaceChoice{
+    height: 100%;
+}
+.textRaceChoice{
+    padding: 0;
+    margin: 0;
+}
+.sideBar{
+    height: 300px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    width: 10%;
+
+}
+.divContentClasse{ /*div including title classe && formClasses*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titleSideBar{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#formChoiceClasse{
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.divInputMan{
+    background : url("../logo/symboleMasculin.jpg");
+}
+.divInputWoman{
+    background-image: url("../logo/symboleFeminin.jpg");
+}
+.pandaren{
+    background-image: url("../logo/pandarenLogo.jpg");
+}
+.divWar{
+    background: url("../logo/warLogo.jpg") no-repeat;
+}
+.divDeathKnight{
+    background: url("../logo/deathKnightLogo.jpg") no-repeat;
+}
+.divPaladin{
+    background: url("../logo/paladinLogo.jpg") no-repeat;
+}
+.divChaman{
+    background: url("../logo/shamanLogo.jpg") no-repeat;
+}
+.divMage{
+    background: url("../logo/mageLogo.jpg") no-repeat;
+}
+.divDemonist{
+    background: url("../logo/demonistLogo.jpg") no-repeat;
+}
+.divRogue{
+    background: url("../logo/rogueLogo.jpg") no-repeat;
+}
+.divHunt{
+    background: url("../logo/huntLogo.jpg") no-repeat;
+}
+.divMonk{
+    background: url("../logo/monkLogo.jpg") no-repeat;
+}
+.divPriest{
+    background: url("../logo/priestLogo.jpg") no-repeat;
+}
+.divdruid{
+    background: url("../logo/druidLogo.jpg") no-repeat;
+}
+.human{
+    background : url("../logo/humanLogo.jpg") no-repeat;
+}
+.nain{
+    background : url("../logo/dwarveLogo.jpg") no-repeat;
+}
+.nightElfe{
+    background : url("../logo/nightElfeLogo.jpg") no-repeat;
+}
+.gnome{
+    background: url("../logo/gnomeLogo.jpg") no-repeat;
+}
+.dranei{
+    background : url("../logo/DraneiLogo.jpg") no-repeat;
+}
+.worgen{
+    background : url("../logo/worgenLogo.jpg") no-repeat;
+}
+.orc{
+    background : url("../logo/orcLogo.jpg") no-repeat;
+}
+.undead{
+    background : url("../logo/undeadLogo.jpg") no-repeat;
+}
+.tauren{
+    background : url("../logo/taurenLogo.jpg") no-repeat;
+}
+.troll{
+    background : url("../logo/trollLogo.jpg") no-repeat;
+}
+.bloodElfe{
+    background : url("../logo/bloodElfeLogo.jpg") no-repeat;
+}
+.gobelin{
+    background : url("../logo/gobelinLogo.jpg") no-repeat;
+}
+.divRace, .divInputSex, .divClasse{
+    background-size: 100% 100%;
+    transform : scale(1);
+    transition : transform 1700ms ease-in-out;
+}
+
+/*Modification suite à l'ajout d'une classe*/
+
+.raceChoisi, .divInputSexChoisi, .classeChoisi{
+    transform : scale(1.4);
+    transition : transform 1700ms ease-in-out;
+}
+.apparitionDivInfoClasse {
+    background-color: red;
+}
+.screenHumanMan{
+    background: url("../logo/humanManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenHumanFemale{
+    background: url("../logo/humanFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenDwarveFemale{
+    background: url("../logo/dwarveFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenDwarveMan{
+    background: url("../logo/dwarveManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenGnomeMan{
+    background: url("../logo/gnomeManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenGnomeFemale{
+    background: url("../logo/gnomeFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenNightElfeMan{
+    background: url("../logo/NightElfeManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenNightElfeFemale{
+    background: url("../logo/NightElfeFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenDraneiFemale{
+    background: url("../logo/draneiFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenDraneiMan{
+    background: url("../logo/draneiManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenWorgenFemale{
+    background: url("../logo/worgenFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenWorgenMan{
+    background: url("../logo/worgenManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenOrcFemale{
+    background: url("../logo/orcFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenOrcMan{
+    background: url("../logo/orcManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenUndeadFemale{
+    background: url("../logo/undeadFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenUndeadMan{
+    background: url("../logo/undeadManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenTrollFemale{
+    background: url("../logo/trollFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenTrollMan{
+    background: url("../logo/trollManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenTaurenFemale{
+    background: url("../logo/taurenFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenTaurenMan{
+    background: url("../logo/taurenManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenBloodElfeFemale{
+    background: url("../logo/bloodElfeFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenBloodElfeMan{
+    background: url("../logo/bloodElfeManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenGobelinFemale{
+    background: url("../logo/gobelinFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenGobelinMan{
+    background: url("../logo/gobelinManPersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenPandarenFemale{
+    background: url("../logo/pandarenFemalePersonnage.jpg");
+    background-size: 100% 100%;
+}
+.screenPandarenMan{
+    background: url("../logo/pandarenManPersonnage.jpg");
+    background-size: 100% 100%;
+}

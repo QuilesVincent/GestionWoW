@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="637dbd82-636f-4e00-a68b-970ac42e1e78" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/returnDislikeActor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/compte.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/comptePerso.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/computer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/dislike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/gbafMiniatureSmartphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/like.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/returnDislikeActor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/compte.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/comptePerso.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/computer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/dislike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/gbafMiniatureSmartphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/like.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/controller/controleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/controller/controleur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/ActorManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/model/ActorManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/AlimentManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/CommentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/model/CommentManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/LikeManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/model/LikeManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/PlatManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/model/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/model/UserManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/multiPage/headerAccueil&amp;Acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/multiPage/headerAccueil&amp;Acteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/multiPage/paramUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/multiPage/paramUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_2_accueil/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_2_accueil/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_2_accueil/divActeurInAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_2_accueil/divActeurInAccueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/acteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/commentInsertion.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/commentInsertion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/likePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/likePost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/newCom.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/newCom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/newComPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/newComPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/accueil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/acteur.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/headerAccueil&amp;Acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/headerAccueil&amp;Acteur.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/ProjetPHPOPC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/ProjetPHPOPC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/controller/controleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/controller/controleur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/ActorManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/ActorManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/AlimentManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/CommentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/CommentManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/LikeManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/LikeManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/PlatManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/UserManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/multiPage/headerAccueil&amp;Acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/multiPage/headerAccueil&amp;Acteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/multiPage/paramUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/multiPage/paramUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_2_accueil/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_2_accueil/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_2_accueil/divActeurInAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_2_accueil/divActeurInAccueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/acteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/commentInsertion.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/commentInsertion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/likePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/likePost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/newCom.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/newCom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/newComPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/newComPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/accueil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/acteur.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/headerAccueil&amp;Acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/headerAccueil&amp;Acteur.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ProjetPHPOPC" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1XhH0yBwiMBcBxIVEacqZO6BSDa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="VAR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\code\routeurGrafikart\templates" />
+      <recent name="C:\xampp\htdocs\code\routeurGrafikart\public" />
+      <recent name="C:\xampp\htdocs\code\routeurGrafikart" />
+      <recent name="C:\xampp\htdocs\xampp\code\jeuxCombatPHPJS\model\Pdo" />
+      <recent name="C:\xampp\htdocs\xampp\code\jeuxCombatPHPJS\model\User" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="autoload.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/vendor/autoload.php">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="637dbd82-636f-4e00-a68b-970ac42e1e78" name="Default Changelist" comment="" />
+      <created>1581928064008</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581928064008</updated>
+      <workItem from="1581928065695" duration="4735000" />
+      <workItem from="1581948094167" duration="190000" />
+      <workItem from="1581948381923" duration="3276000" />
+      <workItem from="1582007498910" duration="7523000" />
+      <workItem from="1582096052273" duration="10522000" />
+      <workItem from="1582182219249" duration="7858000" />
+      <workItem from="1582268646738" duration="6189000" />
+      <workItem from="1582360043902" duration="3229000" />
+      <workItem from="1582530690311" duration="7854000" />
+      <workItem from="1582543714074" duration="2394000" />
+      <workItem from="1582558818353" duration="1899000" />
+      <workItem from="1582612525960" duration="6702000" />
+      <workItem from="1582640178457" duration="1911000" />
+      <workItem from="1582701131380" duration="3462000" />
+      <workItem from="1582788527868" duration="23159000" />
+      <workItem from="1582873887137" duration="9144000" />
+      <workItem from="1583128291586" duration="9629000" />
+      <workItem from="1583221096093" duration="3225000" />
+      <workItem from="1583224399215" duration="4532000" />
+      <workItem from="1583305438858" duration="9519000" />
+      <workItem from="1583325364551" duration="1561000" />
+      <workItem from="1583392026540" duration="8054000" />
+      <workItem from="1583416302531" duration="3781000" />
+      <workItem from="1583476189001" duration="6721000" />
+      <workItem from="1583483605296" duration="3591000" />
+      <workItem from="1583737246403" duration="15106000" />
+      <workItem from="1583822558346" duration="10668000" />
+      <workItem from="1583848123344" duration="6311000" />
+      <workItem from="1584019618694" duration="4324000" />
+      <workItem from="1584028692410" duration="478000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add function for emptyCommennt and if the user miss the name">
+      <created>1583738246976</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583738246976</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add function for emptyCommennt and if the user miss the name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add function for emptyCommennt and if the user miss the name" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="109" key="#Inspections" timestamp="1583831301845">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="392" y="109" key="#Inspections/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583831301845" />
+    <state x="392" y="109" key="#Inspections/0.0.1600.900@0.0.1600.900" timestamp="1583226536261" />
+    <state x="507" y="42" key="#PHP" timestamp="1583774158730">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="507" y="42" key="#PHP/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583774158730" />
+    <state x="519" y="139" key="#autoload.php" timestamp="1583772216126">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="519" y="139" key="#autoload.php/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583772216126" />
+    <state x="254" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583849602233">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="254" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583849602233" />
+    <state x="544" y="254" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583848298598">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="544" y="254" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583848298598" />
+    <state x="554" y="52" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583826262054">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="554" y="52" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583826262054" />
+    <state x="530" y="198" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583849830060">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="530" y="198" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583849830060" />
+    <state x="425" y="45" key="CommitChangelistDialog2" timestamp="1583738240003">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="425" y="45" key="CommitChangelistDialog2/0.0.1600.900@0.0.1600.900" timestamp="1583738240003" />
+    <state x="580" y="206" key="FileChooserDialogImpl" timestamp="1584029174704">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="580" y="206" key="FileChooserDialogImpl/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584029174704" />
+    <state x="580" y="206" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1581930458667" />
+    <state x="634" y="350" width="356" height="200" key="Github.CreateGistDialog" timestamp="1583738319674">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="634" y="350" width="356" height="200" key="Github.CreateGistDialog/0.0.1600.900@0.0.1600.900" timestamp="1583738319674" />
+    <state x="567" y="265" key="NewPhpClassDialog" timestamp="1583826245194">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="567" y="265" key="NewPhpClassDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583826245194" />
+    <state x="567" y="265" key="NewPhpClassDialog/0.0.1600.900@0.0.1600.900" timestamp="1582268811058" />
+    <state x="634" y="374" key="NewPhpFileDialog" timestamp="1584022492709">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="634" y="374" key="NewPhpFileDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584022492709" />
+    <state x="634" y="374" key="NewPhpFileDialog/0.0.1600.900@0.0.1600.900" timestamp="1583305769181" />
+    <state width="576" height="446" key="SwitcherDM" timestamp="1583490860712">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="576" height="446" key="SwitcherDM/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583490860712" />
+    <state width="576" height="446" key="SwitcherDM/0.0.1600.900@0.0.1600.900" timestamp="1583226088213" />
+    <state x="496" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1584028696038">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584028696038" />
+    <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1583822594664" />
+    <state x="609" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582876677465">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="609" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.900@0.0.1600.900" timestamp="1582876677465" />
+    <state x="541" y="93" key="refactoring.ChangeSignatureDialog" timestamp="1583393587253">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="541" y="93" key="refactoring.ChangeSignatureDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1582559728992" />
+    <state x="541" y="93" key="refactoring.ChangeSignatureDialog/0.0.1600.900@0.0.1600.900" timestamp="1583393587253" />
+    <state x="456" y="205" key="run.anything.popup" timestamp="1582105830318">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="456" y="205" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1582105830318" />
+  </component>
+</project>

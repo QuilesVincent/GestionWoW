@@ -1,0 +1,80 @@
+body{
+    background: url("../logo/mapp.jpg") no-repeat;
+    background-size: 100% 100%;
+
+
+}
+.mainPage{
+    width: 100%;
+    height: 100%;
+}
+.contentPersonnage{
+    width: 250px;
+    height: 390px;
+    z-index: 100;
+    position: relative;
+    top: 60%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.infoPerso{
+    height: 10%;
+    text-align: center;
+}
+.personnage{
+    height: 90%;
+
+}
+.undead{
+    background: url("../logo/undeadPlayer.png") no-repeat;
+    background-size: 150px 150px;
+}
+.orc{
+    background: url("../logo/orcPlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.troll{
+    background: url("../logo/trollPlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.tauren{
+    background: url("../logo/taurenPlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.bloodElfe{
+    background: url("../logo/bloodElfePlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.gobelin{
+    background: url("../logo/gobelinPlayer.jpg") no-repeat;
+    background-size: 250px 300px;
+}
+.pandaren{
+    background: url("../logo/pandarenPlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.human{
+    background: url("../logo/humanPlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.dwarf{
+    background: url("../logo/dwarvePlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.nightElfe{
+    background: url("../logo/nightElfePlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.gnome{
+    background: url("../logo/gnomePlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.draenei{
+    background: url("../logo/draeneiPlayer.png") no-repeat;
+    background-size: 250px 300px;
+}
+.worgen{
+    background: url("../logo/worgenPlayer.png") no-repeat;
+    background-size: 250px 300px;
+}

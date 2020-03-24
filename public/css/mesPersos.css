@@ -1,0 +1,75 @@
+body{
+    background-color: silver;
+    height: 100%;
+    border: 1px solid black;
+}
+.mainPage{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.centralFree{
+    height: 85%;
+}
+.divRubrique{
+    display: flex;
+    flex-direction: row;
+}
+.divContentAddon, .divContentBack{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+.divContentStart{
+    width: 50%;
+}
+.start{
+    margin-left: 60%;
+}
+#buttonStart{
+    width: 70%;
+}
+.divContentDeleteCreatePersonnage{
+    width: 30%;
+    display: flex;
+}
+.deletePersonnage{
+    margin-left: 35%;
+    margin-right: 3%;
+}
+.sideBar{
+    background-color : rgba(00,00,00, 0.3);
+    height: 80%;
+    width: 15%;
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.freeSpace{
+    height: 10%;
+}
+/*After modification javascript*/
+.divContentPersonnage{
+    height: 10%;
+    margin-bottom : 12%;
+}
+.divContentPersonnage p{
+    margin: 3% 1% 0% 3%;
+}
+.divContentPersonnage p:first-letter{
+    text-transform: uppercase;
+}
+.paraphName{
+    color: rgb(239,216,7);
+}
+.paraphInfo{
+    color : white;
+}
+.personnageChoice{
+    background-color: rgba(239,216,45, 0.3);
+}
+
+
+
