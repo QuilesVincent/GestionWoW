@@ -1,24 +1,23 @@
 <?php
 
+namespace Models\Personnage\Classes;
+require_once '../Pet/TraitPet.php';
 
-namespace App\Personnage;
-use App\Personnage\Race;
-
-
-class Shaman extends Race
+class Hunt extends \Models\Personnage\Race\Race
 {
+    use Pet;
 
     public function __construct($name, $sex, $race)
     {
         parent::__construct($name, $sex, $race);
         $this->vie = 120;
-        $this->arme = array("main"=>"masse", "second"=>"epée", "third"=>"baton");;
-        $this->style = array("main"=>"healer", "second"=>"dps");
+        $this->arme = "arc";
+        $this->style = "dps";
         $this->energy = "mana";
-        $this->totalEnergy = 380;
-        $this->typeDegat = "magie";
+        $this->totalEnergy = 330;
+        $this->typeDegat = array("main"=>"physique", "second"=>"magie");
         $this->degat = 3;
-        $this->classe = "shaman";
+        $this->classe = "hunt";
     }
 
     public function getName()
@@ -69,11 +68,11 @@ class Shaman extends Race
     public function degat(){
         echo "ta vie descend de " .$this->degat;
     }
-    public function multiHeal(){
-        echo "Je soigne 3 personne en même temps";
+    public function arrowPerfect(){
+        echo "toutes mes flèches font 30% de dégat en plus";
     }
-    public function totemDeFeu(){
-        echo "je mets un totem qui fait 2 dégat aux personnes à moins de 10 mètres toutes les 3 secondes";
+    public function freeze(){
+        echo "je te rend inutilisable pendant 5 secondes";
     }
     public function iterate(){
         foreach($this as $key => $value){

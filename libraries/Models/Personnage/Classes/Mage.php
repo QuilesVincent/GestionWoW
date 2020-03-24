@@ -1,25 +1,22 @@
 <?php
 
+namespace Models\Personnage\Classes;
 
-namespace App\Personnage;
-use App\Personnage\Race;
-require_once 'TraitPet.php';
 
-class Hunt extends Race
+class Mage extends \Models\Personnage\Race\Race
 {
-    use Pet;
 
     public function __construct($name, $sex, $race)
     {
         parent::__construct($name, $sex, $race);
         $this->vie = 120;
-        $this->arme = "arc";
+        $this->arme = "baton";
         $this->style = "dps";
         $this->energy = "mana";
-        $this->totalEnergy = 330;
-        $this->typeDegat = array("main"=>"physique", "second"=>"magie");
+        $this->totalEnergy = 420;
+        $this->typeDegat = "magie";
         $this->degat = 3;
-        $this->classe = "hunt";
+        $this->classe = "mage";
     }
 
     public function getName()
@@ -70,11 +67,11 @@ class Hunt extends Race
     public function degat(){
         echo "ta vie descend de " .$this->degat;
     }
-    public function arrowPerfect(){
-        echo "toutes mes flèches font 30% de dégat en plus";
+    public function sheep(){
+        echo "Je te transforme en mouton durant 5 secondes";
     }
-    public function freeze(){
-        echo "je te rend inutilisable pendant 5 secondes";
+    public function protectIce(){
+        echo "je suis intouchable durant 7 secondes";
     }
     public function iterate(){
         foreach($this as $key => $value){

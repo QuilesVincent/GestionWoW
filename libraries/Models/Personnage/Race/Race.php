@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Personnage;
+namespace Models\Personnage\Race;
 
 
 
-class Race extends Player
+class Race extends \Models\Personnage\Player
 {
     public $race;
     public $advantage = [];

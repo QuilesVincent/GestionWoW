@@ -1,11 +1,9 @@
 <?php
 
-
-namespace App\Personnage;
-use App\Personnage\Race;
+namespace Models\Personnage\Classes;
 
 
-class Rogue extends Race
+class Rogue extends \Models\Personnage\Race\Race
 {
 
 

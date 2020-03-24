@@ -1,28 +1,21 @@
 <?php
 
+namespace Models\Personnage\Classes;
 
-namespace App\Personnage;
-
-
-require_once 'TraitPet.php';
-use App\Personnage\Race;
-
-
-class Demonist extends Race
+class Priest extends \Models\Personnage\Race\Race
 {
-    use Pet;
 
     public function __construct($name, $sex, $race)
     {
         parent::__construct($name, $sex, $race);
         $this->vie = 120;
         $this->arme = "baton";
-        $this->style = "dps";
+        $this->style = array("main"=>"healer", "second"=>"dps");
         $this->energy = "mana";
-        $this->totalEnergy = 420;
+        $this->totalEnergy = 470;
         $this->typeDegat = "magie";
         $this->degat = 3;
-        $this->classe = "demonist";
+        $this->classe = "priest";
     }
 
     public function getName()
@@ -73,8 +66,8 @@ class Demonist extends Race
     public function degat(){
         echo "ta vie descend de " .$this->degat;
     }
-    public function teleportation(){
-        echo "Je me teleporte ailleur";
+    public function fullHeal(){
+        echo "je soigne 3 fois plus vite";
     }
     public function fear(){
         echo "je te rend inutilisable";

@@ -1,7 +1,7 @@
 <?php
-namespace App\Personnage;
+namespace Models\Personnage;
 
-class Player
+abstract class Player
 {
 
     public $name;

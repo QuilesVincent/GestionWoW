@@ -1,24 +1,27 @@
 <?php
 
 
-namespace App\Personnage;
-use App\Personnage\Race;
+namespace Models\Personnage\Classes;
 
 
-class DeathKnight extends Race
+require_once '../Pet/TraitPet.php';
+
+
+class Demonist extends \Models\Personnage\Race\Race
 {
+    use Pet;
 
     public function __construct($name, $sex, $race)
     {
         parent::__construct($name, $sex, $race);
         $this->vie = 120;
-        $this->arme = array("main"=>"epée", "second"=>"hache");
-        $this->style = "dps";;
-        $this->energy = "puissance runique";
-        $this->totalEnergy = 150;
-        $this->typeDegat = array("main"=>"physique", "second"=>"runique" );
+        $this->arme = "baton";
+        $this->style = "dps";
+        $this->energy = "mana";
+        $this->totalEnergy = 420;
+        $this->typeDegat = "magie";
         $this->degat = 3;
-        $this->classe = "deathKnight";
+        $this->classe = "demonist";
     }
 
     public function getName()
@@ -69,11 +72,11 @@ class DeathKnight extends Race
     public function degat(){
         echo "ta vie descend de " .$this->degat;
     }
-    public function frenesieImpie(){
-        echo "Je frappe 2 fois plus vite";
+    public function teleportation(){
+        echo "Je me teleporte ailleur";
     }
-    public function poigneDeLaMort(){
-        echo "je t'attrape et t'amène directement vers moi";
+    public function fear(){
+        echo "je te rend inutilisable";
     }
     public function iterate(){
         foreach($this as $key => $value){

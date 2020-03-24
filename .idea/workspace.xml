@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="637dbd82-636f-4e00-a68b-970ac42e1e78" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/Application.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/Controllers/Afficheur.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/Controllers/Gaming.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/Controllers/MainController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/Controllers/Personnage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/Controllers/Routeur.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/Controllers/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/Models/MainModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/Renderer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/autoload.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/partie_3_actor/returnDislikeActor.php" afterDir="false" />
@@ -11,15 +22,57 @@
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/dislike.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/gbafMiniatureSmartphone.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/logo/like.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/returnDislikeActor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/compte.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/comptePerso.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/computer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/dislike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/gbafMiniatureSmartphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/logo/like.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jeuxCombatPHPJS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jeuxCombatPHPJS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer-setup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.phar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/.idea/controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Controllers/.idea/controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Controllers/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Controllers/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Controllers/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controleur.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/.idea/model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/.idea/model.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Autoloader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Error/ErrorManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Error/ErrorManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/PJ.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Pdo/DBManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/DBManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Classe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/DeathKnight.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/DeathKnight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Demonist.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Demonist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Druid.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Druid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Hunt.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Hunt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Mage.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Mage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Monk.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Monk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Paladin.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Paladin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/PersonnageManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/PersonnageManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Player.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Player.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Priest.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Priest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Race.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Race/Race.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Rogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Rogue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/Shaman.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/Shaman.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/TraitPet.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Pet/TraitPet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Personnage/War.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/Personnage/Classes/War.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Router.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/User/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Models/User/UserManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/changeUserFormPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/multiPage/changeUserFormPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiPage/paramUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/multiPage/paramUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie3/creationPersonnagePreMapp.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie3/creationPersonnagePreMapp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie3/mapp.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie3/mapp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/connexionFormPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_1_inscription_connexion/connexionFormPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/inscriptionFormPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_1_inscription_connexion/inscriptionFormPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/newPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_1_inscription_connexion/newPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_1_inscription_connexion/newPasswordPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_1_inscription_connexion/newPasswordPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/CreationPlayerPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_2_choix_personnage/CreationPlayerPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/deletePlayerPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_2_choix_personnage/deletePlayerPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partie_2_choix_personnage/mesPersos.php" beforeDir="false" afterPath="$PROJECT_DIR$/partie_2_choix_personnage/mesPersos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Http.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/ProjetPHPOPC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/.idea/workspace.xml" afterDir="false" />
@@ -42,28 +95,6 @@
       <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/accueil.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/acteur.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/headerAccueil&amp;Acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPC/public/css/headerAccueil&amp;Acteur.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/ProjetPHPOPC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/ProjetPHPOPC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/controller/controleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/controller/controleur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/ActorManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/ActorManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/AlimentManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/CommentManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/CommentManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/LikeManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/LikeManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/PlatManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/model/UserManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/multiPage/headerAccueil&amp;Acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/multiPage/headerAccueil&amp;Acteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/multiPage/paramUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/multiPage/paramUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_2_accueil/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_2_accueil/accueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_2_accueil/divActeurInAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_2_accueil/divActeurInAccueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/acteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/commentInsertion.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/commentInsertion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/likePost.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/likePost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/newCom.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/newCom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/newComPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/partie_3_actor/newComPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/accueil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/acteur.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/headerAccueil&amp;Acteur.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass/public/css/headerAccueil&amp;Acteur.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +117,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ProjetPHPOPC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -110,7 +141,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjetPHPOPCAmeliorationClass" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -121,11 +152,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\code\routeurGrafikart\templates" />
-      <recent name="C:\xampp\htdocs\code\routeurGrafikart\public" />
-      <recent name="C:\xampp\htdocs\code\routeurGrafikart" />
-      <recent name="C:\xampp\htdocs\xampp\code\jeuxCombatPHPJS\model\Pdo" />
-      <recent name="C:\xampp\htdocs\xampp\code\jeuxCombatPHPJS\model\User" />
+      <recent name="C:\xampp\htdocs\code\GestionWorldOfWarcraft\libraries\Models\Personnage" />
+      <recent name="C:\xampp\htdocs\code\GestionWorldOfWarcraft\libraries\Controllers" />
+      <recent name="C:\xampp\htdocs\code\GestionWorldOfWarcraft" />
+      <recent name="C:\xampp\htdocs\code\GestionWorldOfWarcraft\libraries" />
+      <recent name="C:\xampp\htdocs\code\GestionWorldOfWarcraft\libraries\Models\Personnage\Manager" />
     </key>
   </component>
   <component name="RunManager">
@@ -185,6 +216,7 @@
       <workItem from="1583848123344" duration="6311000" />
       <workItem from="1584019618694" duration="4324000" />
       <workItem from="1584028692410" duration="478000" />
+      <workItem from="1585031987001" duration="9784000" />
     </task>
     <task id="LOCAL-00001" summary="Add function for emptyCommennt and if the user miss the name">
       <created>1583738246976</created>
@@ -247,26 +279,30 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="634" y="350" width="356" height="200" key="Github.CreateGistDialog/0.0.1600.900@0.0.1600.900" timestamp="1583738319674" />
-    <state x="567" y="265" key="NewPhpClassDialog" timestamp="1583826245194">
+    <state x="567" y="265" key="NewPhpClassDialog" timestamp="1585038628084">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="567" y="265" key="NewPhpClassDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583826245194" />
+    <state x="567" y="265" key="NewPhpClassDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1585038628084" />
     <state x="567" y="265" key="NewPhpClassDialog/0.0.1600.900@0.0.1600.900" timestamp="1582268811058" />
-    <state x="634" y="374" key="NewPhpFileDialog" timestamp="1584022492709">
+    <state x="634" y="374" key="NewPhpFileDialog" timestamp="1585039264359">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="634" y="374" key="NewPhpFileDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584022492709" />
+    <state x="634" y="374" key="NewPhpFileDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1585039264359" />
     <state x="634" y="374" key="NewPhpFileDialog/0.0.1600.900@0.0.1600.900" timestamp="1583305769181" />
     <state width="576" height="446" key="SwitcherDM" timestamp="1583490860712">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="576" height="446" key="SwitcherDM/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1583490860712" />
     <state width="576" height="446" key="SwitcherDM/0.0.1600.900@0.0.1600.900" timestamp="1583226088213" />
-    <state x="496" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1584028696038">
+    <state x="496" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1585074097633">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1584028696038" />
+    <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1585074097633" />
     <state x="496" y="275" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1583822594664" />
+    <state x="444" y="66" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585039400404">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="444" y="66" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1600.900/1600.0.1920.1080@0.0.1600.900" timestamp="1585039400404" />
     <state x="609" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582876677465">
       <screen x="0" y="0" width="1600" height="900" />
     </state>

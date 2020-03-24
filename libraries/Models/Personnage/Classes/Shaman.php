@@ -1,23 +1,23 @@
 <?php
 
 
-namespace App\Personnage;
-use App\Personnage\Race;
+namespace Models\Personnage\Classes;
 
-class War extends Race
+
+class Shaman extends \Models\Personnage\Race\Race
 {
 
     public function __construct($name, $sex, $race)
     {
         parent::__construct($name, $sex, $race);
         $this->vie = 120;
-        $this->arme = "epée";
-        $this->style = "dps";
-        $this->energy = "rage";
-        $this->totalEnergy = 100;
-        $this->typeDegat = "physique";
+        $this->arme = array("main"=>"masse", "second"=>"epée", "third"=>"baton");;
+        $this->style = array("main"=>"healer", "second"=>"dps");
+        $this->energy = "mana";
+        $this->totalEnergy = 380;
+        $this->typeDegat = "magie";
         $this->degat = 3;
-        $this->classe = "war";
+        $this->classe = "shaman";
     }
 
     public function getName()
@@ -68,11 +68,11 @@ class War extends Race
     public function degat(){
         echo "ta vie descend de " .$this->degat;
     }
-    public function charge(){
-        echo "Je te charge, te staunt, et te fais 5 de dégat";
+    public function multiHeal(){
+        echo "Je soigne 3 personne en même temps";
     }
-    public function upPower(){
-        echo "J'augmente de 2 mes dégat";
+    public function totemDeFeu(){
+        echo "je mets un totem qui fait 2 dégat aux personnes à moins de 10 mètres toutes les 3 secondes";
     }
     public function iterate(){
         foreach($this as $key => $value){

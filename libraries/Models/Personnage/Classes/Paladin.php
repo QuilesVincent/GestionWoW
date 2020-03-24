@@ -1,10 +1,9 @@
 <?php
 
 
-namespace App\Personnage;
-use App\Personnage\Race;
+namespace Models\Personnage\Classes;
 
-class Paladin extends Race
+class Paladin extends \Models\Personnage\Race\Race
 {
 
 

@@ -1,23 +1,23 @@
 <?php
 
 
-namespace App\Personnage;
-use App\Personnage\Race;
+namespace Models\Personnage\Classes;
 
-class Monk extends Race
+
+class DeathKnight extends \Models\Personnage\Race\Race
 {
 
     public function __construct($name, $sex, $race)
     {
         parent::__construct($name, $sex, $race);
         $this->vie = 120;
-        $this->arme = array("main"=>"masse", "second"=>"epée", "third"=>"baton");
-        $this->style = array("main"=>"dps", "second"=>"healer");;
-        $this->energy = "mana";
-        $this->totalEnergy = 310;
-        $this->typeDegat = array("main"=>"physique", "second"=>"magie" );
-        $this->degat = 1;
-        $this->classe = "monk";
+        $this->arme = array("main"=>"epée", "second"=>"hache");
+        $this->style = "dps";;
+        $this->energy = "puissance runique";
+        $this->totalEnergy = 150;
+        $this->typeDegat = array("main"=>"physique", "second"=>"runique" );
+        $this->degat = 3;
+        $this->classe = "deathKnight";
     }
 
     public function getName()
@@ -68,8 +68,11 @@ class Monk extends Race
     public function degat(){
         echo "ta vie descend de " .$this->degat;
     }
-    public function priereDuSage(){
-        echo "Regeneration de 50 % mana et 25 % vie, pour tout mon groupe";
+    public function frenesieImpie(){
+        echo "Je frappe 2 fois plus vite";
+    }
+    public function poigneDeLaMort(){
+        echo "je t'attrape et t'amène directement vers moi";
     }
     public function iterate(){
         foreach($this as $key => $value){

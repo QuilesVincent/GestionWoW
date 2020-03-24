@@ -1,24 +1,22 @@
 <?php
 
 
-namespace App\Personnage;
-use App\Personnage\Race;
+namespace Models\Personnage\Classes;
 
-
-class Mage extends Race
+class War extends \Models\Personnage\Race\Race
 {
 
     public function __construct($name, $sex, $race)
     {
         parent::__construct($name, $sex, $race);
         $this->vie = 120;
-        $this->arme = "baton";
+        $this->arme = "epée";
         $this->style = "dps";
-        $this->energy = "mana";
-        $this->totalEnergy = 420;
-        $this->typeDegat = "magie";
+        $this->energy = "rage";
+        $this->totalEnergy = 100;
+        $this->typeDegat = "physique";
         $this->degat = 3;
-        $this->classe = "mage";
+        $this->classe = "war";
     }
 
     public function getName()
@@ -69,11 +67,11 @@ class Mage extends Race
     public function degat(){
         echo "ta vie descend de " .$this->degat;
     }
-    public function sheep(){
-        echo "Je te transforme en mouton durant 5 secondes";
+    public function charge(){
+        echo "Je te charge, te staunt, et te fais 5 de dégat";
     }
-    public function protectIce(){
-        echo "je suis intouchable durant 7 secondes";
+    public function upPower(){
+        echo "J'augmente de 2 mes dégat";
     }
     public function iterate(){
         foreach($this as $key => $value){

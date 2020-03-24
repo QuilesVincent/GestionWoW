@@ -1,23 +1,23 @@
 <?php
 
+namespace Models\Personnage\Classes;
 
-namespace App\Personnage;
-use App\Personnage\Race;
-
-class Priest extends Race
+class Druid extends \Models\Personnage\Race\Race
 {
+    public $forme;
 
     public function __construct($name, $sex, $race)
     {
         parent::__construct($name, $sex, $race);
         $this->vie = 120;
         $this->arme = "baton";
-        $this->style = array("main"=>"healer", "second"=>"dps");
+        $this->style = array("main"=>"healer", "second"=>"dps");;
         $this->energy = "mana";
-        $this->totalEnergy = 470;
-        $this->typeDegat = "magie";
-        $this->degat = 3;
-        $this->classe = "priest";
+        $this->totalEnergy = 310;
+        $this->typeDegat = array("main"=>"magie", "second"=>"physique" );
+        $this->degat = 1;
+        $this->classe = "druid";
+        $this->forme = "human";
     }
 
     public function getName()
@@ -64,15 +64,35 @@ class Priest extends Race
     {
         return $this->classe;
     }
+    public function getForme()
+    {
+        return $this->forme;
+    }
 
     public function degat(){
         echo "ta vie descend de " .$this->degat;
     }
-    public function fullHeal(){
-        echo "je soigne 3 fois plus vite";
+    public function transformationBear(){
+        if($this->forme === "human"){
+            echo "Je me transforme en ours";
+            $this->forme = "ours";
+            $this->energy = "rage";
+            $this->degat = $this->degat * 2;
+        }else{
+            echo "tu es déjà en ours";
+        }
     }
-    public function fear(){
-        echo "je te rend inutilisable";
+    public function transformationHuman(){
+        if($this->forme == "ours"){
+            $this->forme ="human";
+            $this->energy = "mana";
+            $this->degat = $this->degat / 2;
+        }else{
+            echo "tu es déjà human";
+        }
+    }
+    public function regenerationSolo(){
+        echo "je te pose une fleur qui te régénère 10 points de vie toutes les 3 secondes pendant 12 secondes";
     }
     public function iterate(){
         foreach($this as $key => $value){
