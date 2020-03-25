@@ -25,10 +25,8 @@ class PersonnageManager extends  \Models\MainModel
     //function to delete a personnage
     public function deletePersonnage(string $name_personnage, int $id_user_target)
     {
-        $db = $this->dbConnect();
-        $req = $db->prepare('DELETE FROM Personnage WHERE name_personnage = ? AND id_target_user = ?');
+        $req = $this->pdo->prepare('DELETE FROM Personnage WHERE name_personnage = ? AND id_target_user = ?');
         $affectedLines = $req->execute(array($name_personnage,$id_user_target));
-        return $affectedLines;
     }
     //reste celle la à faire
     //Function pour modifier les informations de comptes d'un user

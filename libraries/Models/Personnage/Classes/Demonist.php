@@ -4,12 +4,9 @@
 namespace Models\Personnage\Classes;
 
 
-require_once '../Pet/TraitPet.php';
-
-
 class Demonist extends \Models\Personnage\Race\Race
 {
-    use Pet;
+    use \Models\Personnage\Pet\Pet;;
 
     public function __construct($name, $sex, $race)
     {

@@ -15,6 +15,7 @@ class Personnage extends MainController
 
     public function afficheAllPersonnage($id)
     {
+        //Search all the personnage and return
         $resp = $this->model->findAll("id_target_user", $id);
         if($resp){
             return $resp;
@@ -23,7 +24,9 @@ class Personnage extends MainController
 
     public function foundPersonnage($name)
     {
+        //Check if exist personnage
         $resp = $this->model->find("name_personnage", $name);
+        //If exist, create a new classe, depend classe's personnage
         if($resp) {
             $classePerso = $resp["classe_personnage"];
             switch($classePerso) {
@@ -61,6 +64,7 @@ class Personnage extends MainController
                     $newPersonnage = new \Models\Personnage\Classes\deathKnight($resp["name_personnage"], $resp["sex_personnage"], $resp["race_personnage"]);
                     break;
             }
+            //serialise for recuperate after and return the perso
             $perso = serialize($newPersonnage);
             return $perso;
         }
@@ -69,7 +73,10 @@ class Personnage extends MainController
 
     public function creationPlayer($idTargetUser, $name, $classe, $sex, $race)
     {
+        //check if name for personnage is free
         $verifNamePerso = $this->model->find("name_personnage", $name);
+        //if the name is free, create a new perso, depend of the classe.
+        //don't miss name, sex and race send by a post
         if(empty($verifNamePerso)) {
             switch($classe) {
                 case "rogue" :
@@ -106,12 +113,15 @@ class Personnage extends MainController
                     $newPersonnage = new \Models\Personnage\Classes\DeathKnight($name, $sex, $race);
                     break;
             }
+            //Use function of the personnage to recuperate the life, totalEnergy and degatPersonnage
             $viePersonnage = $newPersonnage->getVie();
             $totalEnergyPersonnage = $newPersonnage->getTotalEnergy();
             $degatPersonnage = $newPersonnage->getDegat();
+            //Add at the table sql with all the data
             $this->model->addPersonnage($idTargetUser, $name, $viePersonnage, $totalEnergyPersonnage, $degatPersonnage, $race, $classe, $sex);
-
+            
         } else {
+            //if the name isn't free, send error
             $error = "Nom déjà prix";
             \Renderer::redirect("choixPersonnage/choixPersonnage", compact('error'));
         }

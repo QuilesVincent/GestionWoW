@@ -37,7 +37,6 @@ window.onload =  () => {
             deleteClasse(divPersonnage, "personnageChoice");
             divPersonnage[i].classList.add("personnageChoice");
             name = divPersonnage[i].firstElementChild.textContent;
-            console.log(name);
         });
     };
 
@@ -50,7 +49,7 @@ window.onload =  () => {
         document.location.href = "http://localhost/code/GestionWorldOfWarcraft/index.php?controllers=user&task=logOut";
     });
     newPersonnageCreate.addEventListener("click", (e) => {
-        document.location.href = "http://localhost/code/GestionWorldOfWarcraft/index.php?controllers=afficheur&task=afficheCreationPersonnage";
+        document.location.href = "http://localhost/code/GestionWorldOfWarcraft/index.php?controllers=routeur&task=chargeNewPersonnage";
     });
 
     //notre ajax:
@@ -119,21 +118,18 @@ window.onload =  () => {
             }
         }
     }
-/* Resoudre le problème du delete
     deletePersonnage.addEventListener("click", (e) => {
-        let data = {delete:name};
-        ajax.post("http://localhost/code/GestionWorldOfWarcraft/vue/parties/mapp/receptJS.php", data, successDelete, "error");
-    });*/
-
-    startButton.addEventListener("click", (e) => {
-        let xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost/code/GestionWorldOfWarcraft/vue/parties/mapp/receptJS.php", true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send('param1=' + name);
-        document.location.href = `http://localhost/code/GestionWorldOfWarcraft/index.php?controllers=routeur&task=goMapp&name_personnage=${name}`;
+        //let data = {delete:name};
+        //ajax.post("http://localhost/code/GestionWorldOfWarcraft/vue/parties/mapp/receptJS.php", data, successDelete, "error");
+        document.location.href = `http://localhost/code/GestionWorldOfWarcraft/index.php?controllers=routeur&task=chargeBackMesPersos&name_personnage=${name}`;
     });
 
-
-    console.log(data);
+    startButton.addEventListener("click", (e) => {
+        /*let xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://localhost/code/GestionWorldOfWarcraft/vue/parties/mapp/receptJS.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send('param1=' + name);*/
+        document.location.href = `http://localhost/code/GestionWorldOfWarcraft/index.php?controllers=routeur&task=goMapp&name_personnage=${name}`;
+    });
 
 };

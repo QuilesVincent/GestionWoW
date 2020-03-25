@@ -14,9 +14,6 @@ abstract class MainController
         $this->model = new $this->modelName();
     }
 }
-/*
-$userObj = new UserManager();
-$personnageManagerObj = new PersonnageManager();*/
 
 
 

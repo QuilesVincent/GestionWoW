@@ -28,7 +28,7 @@ class UserManager extends \Models\MainModel
     }
 
     //Function pour vérifier la validité d'un user en fonction de : username, secretQuestion et secretQuestionAnswser
-    public function getUserResetPass($userName, $secretQuestion, $secretQuestionAnswer)
+    public function getUserResetPass(string $userName, string $secretQuestion, string $secretQuestionAnswer)
     {
         $req = $this->pdo->prepare('SELECT * FROM user WHERE userName = :userName AND secretQuestion = :secretQuestion AND secretQuestionAnswer = :secretQuestionAnswer');
         $req->execute(array(
@@ -40,7 +40,7 @@ class UserManager extends \Models\MainModel
     }
 
     //Function pour ajouter un user
-    public function addUser($lastName, $firstName, $userName,$password):void
+    public function addUser(string $lastName, string $firstName, string $userName, string $password):void
     {
         $passwordCrypt = password_hash($password, PASSWORD_DEFAULT);
         $req = $this->pdo->prepare('INSERT INTO user (lastName, firstName, userName, userPassword) VALUES (:lastName, :firstName, :userName, :userPassword)');
@@ -49,58 +49,45 @@ class UserManager extends \Models\MainModel
         $req->bindValue(':userName',$userName, \PDO::PARAM_STR);
         $req->bindValue(':userPassword',$passwordCrypt, \PDO::PARAM_STR);
         
-        $affectedLines = $req->execute();
-    }
-    //function pour ajouter le personnage à un compte User
-    public function addPlayerToUser($newNumber, $userName)
-    {
-        $req = $this->pdo->prepare('UPDATE user SET nombre_Personnage = :nombre_Personnage WHERE userName = :userName');
-        $req->bindValue(':nombre_Personnage', $newNumber, \PDO::PARAM_INT);
-        $req->bindValue(':userName', $userName, \PDO::PARAM_STR);
         $req->execute();
     }
 
-
-
-
-
-
-
-
+    //function pour ajouter le personnage à un compte User
+    public function addPlayerToUser(int $newNumber, int $idUser)
+    {
+        $req = $this->pdo->prepare('UPDATE user SET nombre_Personnage = :nombre_Personnage WHERE id_user = :idUser');
+        $req->bindValue(':nombre_Personnage', $newNumber, \PDO::PARAM_INT);
+        $req->bindValue(':idUser', $idUser, \PDO::PARAM_INT);
+        $req->execute();
+    }
 
     //Function pour modifier le password d'un user
-    public function modificationUserPassword($userName,$secretQuestionAnswer,$password)
+    public function modificationUserPassword(string $userName, string $secretQuestionAnswer, string $password)
     {
         $passwordCrypt = password_hash($password, PASSWORD_DEFAULT);
-        $db = $this->dbConnect();
-        $req = $db->prepare('UPDATE user SET userPassword = :newUserPassword WHERE userName = :userName AND secretQuestionAnswer = :secretQuestionAnswer');
+        $req = $this->pdo->prepare('UPDATE user SET userPassword = :newUserPassword WHERE userName = :userName AND secretQuestionAnswer = :secretQuestionAnswer');
         $donnees = $req->execute(array(
             ':newUserPassword' => $passwordCrypt,
             ':userName' => $userName,
             ':secretQuestionAnswer' => $secretQuestionAnswer,
         ));
     }
+
     //Function pour modifier les informations de comptes d'un user
-    public function modificationUserInformation($newLastName, $newFirstName, $newUserName, $newUserPassword, $newSecretQuestion, $newSecretQuestionAnswer, $userName)
+    public function modificationUserInformation(string $newLastName, string $newFirstName, string $newUserName, string $newUserPassword, string $newSecretQuestion, string $newSecretQuestionAnswer, string $userName)
     {
-        $_SESSION['userName'] = $newUserName;
-        $_SESSION['firstName'] = $newFirstName;
-        $_SESSION['lastName'] = $newLastName;
         $newPasswordCrypt = password_hash($newUserPassword, PASSWORD_DEFAULT);
-
-        $db = $this->dbConnect();
-        $req = $db->prepare("UPDATE user SET lastName = :newLastName, firstName = :newFirstName, userName = :newUserName, userPassword = :newUserPassword, secretQuestion = :newSecretQuestion, secretQuestionAnswer = :newSecretQuestionAnswer WHERE userName = :userName");
+        $req = $this->pdo->prepare("UPDATE user SET lastName = :newLastName, firstName = :newFirstName, userName = :newUserName, userPassword = :newUserPassword, secretQuestion = :newSecretQuestion, secretQuestionAnswer = :newSecretQuestionAnswer WHERE userName = :userName");
         
-        $req->bindValue(':newLastName', $newLastName, PDO::PARAM_STR);
-        $req->bindValue(':newFirstName', $newFirstName, PDO::PARAM_STR);
-        $req->bindValue(':newUserName', $newUserName, PDO::PARAM_STR);
-        $req->bindValue(':newUserPassword', $newPasswordCrypt, PDO::PARAM_STR);
-        $req->bindValue(':newSecretQuestion', $newSecretQuestion, PDO::PARAM_STR);
-        $req->bindValue(':newSecretQuestionAnswer', $newSecretQuestionAnswer, PDO::PARAM_STR);
-        $req->bindValue(':userName', $userName, PDO::PARAM_STR);
+        $req->bindValue(':newLastName', $newLastName, \PDO::PARAM_STR);
+        $req->bindValue(':newFirstName', $newFirstName, \PDO::PARAM_STR);
+        $req->bindValue(':newUserName', $newUserName, \PDO::PARAM_STR);
+        $req->bindValue(':newUserPassword', $newPasswordCrypt, \PDO::PARAM_STR);
+        $req->bindValue(':newSecretQuestion', $newSecretQuestion, \PDO::PARAM_STR);
+        $req->bindValue(':newSecretQuestionAnswer', $newSecretQuestionAnswer, \PDO::PARAM_STR);
+        $req->bindValue(':userName', $userName, \PDO::PARAM_STR);
 
-        $affectedLines = $req->execute();
-        return $affectedLines;
+        $req->execute();
     }
 
 }

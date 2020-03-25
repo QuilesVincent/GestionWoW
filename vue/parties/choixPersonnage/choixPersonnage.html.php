@@ -9,7 +9,6 @@ if(isset($infoUser)){
         $_SESSION['lastName'] = $info['lastName'];
         $_SESSION['firstName'] = $info['firstName'];
     }
-    $id = $_SESSION['idUser'];
 }
 
 ?>

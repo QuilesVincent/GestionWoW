@@ -1,5 +1,5 @@
 <?php
-namespace Models\Pet;
+namespace Models\Personnage\Pet;
 
 trait Pet
 {
